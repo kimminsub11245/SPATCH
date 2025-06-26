@@ -1,4 +1,5 @@
 # Xcode
+<<<<<<< HEAD
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
@@ -60,3 +61,20 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+=======
+DerivedData/
+build/
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+
+# SwiftPM
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+
+# 기타
+*.xcodeproj/project.xcworkspace/xcuserdata
+>>>>>>> 89e9753 (Initial commit with full Swift project and KakaoMap SDK)

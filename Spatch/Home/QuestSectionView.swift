@@ -172,16 +172,7 @@ private struct QuestCardView: View {
                 .frame(width: 262, height: 350)
                 .clipped()
 
-            // 그라데이션(투명 -> 블랙)
-            LinearGradient(
-                stops: [
-                    .init(color: .black.opacity(0), location: 0.28),
-                    .init(color: .black, location: 0.90)
-                ],
-                startPoint: UnitPoint(x: 1, y: 0.5),
-                endPoint: UnitPoint(x: 0, y: 0.5)
-            )
-            .frame(width: 262, height: 350)
+            
 
             // 텍스트 영역(185 x 94)
             VStack(alignment: .leading, spacing: 10) {

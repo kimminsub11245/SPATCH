@@ -19,20 +19,20 @@ struct HomeView: View {
                     QuestSectionView()
                         .padding(.top,42)
                         .padding(.horizontal, 20)
-
-
-                    // 아래 섹션들 (더미 자리)
-                    VStack(spacing: 20) {
                     
+                    AddBanner()
+                        .padding(.top,0)
+                    
+                    VStack(alignment: .leading, spacing: 0) {
+                        Word()
+                            .padding(.top, 31) // Word와 화면 상단 간격
 
-                        RoundedRectangle(cornerRadius: 16)
-                            .fill(Color.white.opacity(0.08))
-                            .frame(height: 400)
-                            .overlay(
-                                Text("탐사기록 섹션 자리")
-                                    .foregroundColor(.white.opacity(0.7))
-                            )
+                        Spacer().frame(height: 1)
+
+                        ExplorerRecordSection()
                     }
+
+
                     .padding(.top, 16)
                     .padding(.horizontal, 20)
 
@@ -46,6 +46,8 @@ struct HomeView: View {
 #Preview {
     HomeView()
 }
+
+
 
 ////////////////////////////////////////////////////////////////
 // MARK: - HomeHeroHeaderView

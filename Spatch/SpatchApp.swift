@@ -9,7 +9,7 @@ struct SpatchApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            ScheduleView()
                 .environment(\.font, .custom("Pretendard-Regular", size: 16))
         }
     }

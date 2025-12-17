@@ -2,6 +2,7 @@ import SwiftUI
 
 // MARK: - App Fonts
 enum AppFont {
+
     enum Paperlogy: String {
         case thin = "Paperlogy-1Thin"
         case extraLight = "Paperlogy-2ExtraLight"
@@ -15,11 +16,15 @@ enum AppFont {
     }
 
     enum Pretendard: String {
-        // ✅ 네가 실제로 쓰는 이름으로 맞춰 (Pretendard-Regular / Pretendard 등)
+        case thin = "Pretendard-Thin"
+        case extraLight = "Pretendard-ExtraLight"
+        case light = "Pretendard-Light"
         case regular = "Pretendard-Regular"
         case medium = "Pretendard-Medium"
         case semiBold = "Pretendard-SemiBold"
         case bold = "Pretendard-Bold"
+        case extraBold = "Pretendard-ExtraBold"
+        case black = "Pretendard-Black"
     }
 }
 
